@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-
+void test(){
+  // ignore: unused_local_variable
+  List<String?>? l = ["HI", null];
+  l = null;
+}
 void main() {
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
