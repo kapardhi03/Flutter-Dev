@@ -71,6 +71,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
         backgroundColor: Color.fromARGB(221, 29, 25, 25),
       ),
+      backgroundColor: const Color.fromARGB(255, 38, 37, 37),
       body: Column(
         children: [
           Expanded(
@@ -93,8 +94,17 @@ class _ChatScreenState extends State<ChatScreen> {
                 Expanded(
                   child: TextField(
                     controller: _controller,
+                    style: const TextStyle(
+                      color: Colors.white, // Set the typed text color here
+                    ),
+
                     decoration: const InputDecoration(
                       hintText: 'Enter your message',
+                      hintStyle: TextStyle(
+                          color: Colors.grey, // Change the color value as desired
+                        ),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 16.0),
+                        hoverColor: Colors.grey
                     ),
                     onSubmitted: _sendMessage,
                   ),
