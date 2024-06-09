@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // debugShowCheckedModeBanner: false,
       title: 'AVA AI',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-        scaffoldBackgroundColor: Color.fromARGB(255, 183, 178, 178)
-      ),
+          primarySwatch: Colors.blue,
+          useMaterial3: true,
+          scaffoldBackgroundColor: Color.fromARGB(255, 183, 178, 178)),
       home: const ChatScreen(),
     );
   }
